@@ -1,0 +1,522 @@
+
+
+/* Table of content
+======================================
+************** common css ************
+1)Reset css
+2)Top header section
+3)Menu bar section
+4)Inner page heading
+5)Product card
+6)Footer section
+======================================
+*************** Home Page **************
+1)Top header section
+2)Menu bar section
+3)Banner section
+4)Feature section
+*/
+
+/* reset css */
+body{
+    font-family: var(--primary-font);
+}
+p{
+    font-family: var(--secondary-font);
+}
+h1,h2,h3,h4,h5,h6
+ul,ol,span,small,p{
+    margin: 0;
+    padding: 0;
+}
+ol,ul{
+    list-style-type: none;
+}
+a,a:hover{
+    text-decoration: none;
+}
+input:focus{
+    outline: none;
+}
+.form-control:focus{
+    box-shadow: none;
+}
+/* reset css */
+:root{
+    --primary-font: 'Josefin Sans', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+    --text-color:#11161e;
+    --dark-hover-color:#151a32;
+    --light-color:#ffffff;
+    --dark-color:#000000;
+    --primary-color-light:#ff6f61;
+    --primary-color-dark:#ff5645;
+    --paragraph-color:#444444;
+    --bg-color-light:#f1f1f1;
+    --bg-color-dark:#f1f3f4;
+
+
+}
+                      /* Top header section  start*/
+#top_bar{
+    background: var(--dark-hover-color);
+    padding: 11px 0;
+    height: 50px;
+}
+#top_bar .top_bar_left p i{
+    color: var(--primary-color-dark);
+    padding-right: 5px;
+}
+#top_bar .top_bar_left p{
+    color: var(--light-color);
+    line-height: 28px;
+}
+#top_bar .top_bar_left p span{
+    color: var(--primary-color-light);
+    line-height: 26px;
+}
+#top_bar .top_bar_right li select,
+#top_bar .top_bar_right li a{
+    border: none;
+    background: none;
+    color: var(--light-color);
+    cursor: pointer;
+}
+#top_bar .top_bar_right li select option{
+    color: var(--text-color);
+}
+#top_bar .top_bar_right .info li{
+    padding: 0 20px;
+    border-right: 1px solid var(--bg-color-dark);
+}
+#top_bar .top_bar_right .icon li a{
+    padding-left: 10px;
+    transition: .3s;
+}
+#top_bar .top_bar_right .icon li a:hover{
+    color: var(--primary-color-dark)}
+                    /* Top header section end */
+                      /* nav section start */
+   #nav .nav_menu ul:first-child li a{
+     color: var(--text-color);
+     padding: 37px 15px;
+     line-height: 26px;
+     transition: .4s;
+}
+#nav .nav_menu ul:first-child li a:hover{
+     color: var(--primary-color-light);
+}
+#nav .nav_menu ul:first-child li a i{
+     font-size: 12px;
+}
+#nav .nav_icon li a,
+#nav .nav_icon li button{
+     border: none;
+     background: none;
+     color: var(--text-color);
+     font-size: 20px;
+     padding-left: 20px;
+     transition: .4s;
+}
+#nav .nav_icon li a:hover{
+     color: var(--primary-color-light);
+}
+#nav .nav_icon li button:hover{
+     color: var(--primary-color-light);
+}
+#nav .nav_icon .card_show_btn span{
+     position: absolute;
+     right: -4px;
+     top:-2px;
+     display: inline-block;
+     font-size: 14px;
+     height: 17px;
+     width: 17px;
+     border-radius: 50%;
+     background: var(--primary-color-dark);
+     color: var(--light-color);
+}
+                      /* nav section end */
+                      /* banner section start */
+#banner .banner_slider_items{
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}     
+#banner .banner_slider_items .item1 h5{
+    font-family: var(--primary-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--bg-color-light);
+    margin-bottom: 14px;
+
+}  
+ 
+#banner .banner_slider_items .item1 h2{
+    font-family: var(--primary-font);
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 74px;
+    color: var(--bg-color-light);
+    margin-bottom: 14px;
+
+}    
+#banner .banner_slider_items .item1 p{
+    font-family:var(--secondary-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--bg-color-light);
+    margin-bottom: 16px;
+}    
+#banner .banner_slider_items .item1 a{
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--light-color);
+    background-color: var(--primary-color-dark);
+    padding: 15px 11px;
+    margin: 15px 0;
+    transition: .5s; 
+}
+#banner .banner_slider_items .item1 a:hover{
+    color: var(--primary-color-dark);
+    background-color: var(--light-color);
+}
+#banner .banner_slider_items .item1 a i{
+    padding: 0 10px;
+}
+#banner .banner_slider_items .item2 h5{
+    font-family: var(--primary-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--dark-color);
+    margin-bottom: 14px;
+
+}  
+ 
+#banner .banner_slider_items .item2 h2{
+    font-family: var(--primary-font);
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 74px;
+    color: var(--dark-color);
+    margin-bottom: 14px;
+
+}    
+#banner .banner_slider_items .item2 p{
+    font-family:var(--secondary-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--dark-color);
+    margin-bottom: 16px;
+}    
+#banner .banner_slider_items .item2 a{
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--light-color);
+    background-color: var(--dark-color);
+    padding: 15px 11px;
+    margin: 15px 0;
+    transition: .5s; 
+}
+#banner .banner_slider_items .item2 a:hover{
+    color: var(--dark-color);
+    background-color: var(--primary-color-light);
+}
+#banner .banner_slider_items .item2 a i{
+    padding: 0 10px;
+}
+#banner .banner_slider_items .item3 h5{
+    font-family: var(--primary-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--bg-color-light);
+    margin-bottom: 14px;
+
+}  
+ 
+#banner .banner_slider_items .item3 h2{
+    font-family: var(--primary-font);
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 74px;
+    color: var(--bg-color-light);
+    margin-bottom: 14px;
+
+}    
+#banner .banner_slider_items .item3 p{
+    font-family:var(--secondary-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--bg-color-light);
+    margin-bottom: 16px;
+}    
+#banner .banner_slider_items .item3 a{
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--light-color);
+    background-color: var(--primary-color-dark);
+    padding: 15px 11px;
+    margin: 15px 0;
+    transition: .5s; 
+}
+#banner .banner_slider_items .item3 a:hover{
+    color: var(--primary-color-dark);
+    background-color: var(--light-color);
+}
+#banner .banner_slider_items .item3 a i{
+    padding: 0 10px;
+}
+#banner ul.banner_slider_dots{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 12px;
+    bottom: 200px;
+}
+#banner ul.banner_slider_dots li{
+    line-height: 0;
+    margin-right: 5px;
+}
+#banner ul.banner_slider_dots li button{
+    border: none;
+    width: 10px;
+    height: 6px;
+    border-radius: 5px;
+    background-color: var(--light-color);
+    font-size: 0;
+    transition: .5s;
+}
+#banner ul.banner_slider_dots li.slick-active button{
+    width: 26px;
+    background-color: var(--primary-color-dark);
+}
+#banner ul.banner_slider_dots li:nth-child(2).slick-active button{
+    width: 26px;
+    background-color: var(--dark-color);
+}
+                      /* banner section end */
+                      /* search section start */
+#search{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 999999999999;
+    transform: scale(0);
+    transition: .5s;
+}
+#search.show{
+    transform: scale(1);
+}
+#search form{
+    border: 3px solid var(--primary-color-light);
+    width: 50%;
+    border-radius: 50px;
+    padding: 15px 30px;
+}
+#search form input,
+#search form button,
+#search form input::placeholder{
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-family: var(--secondary-font);
+    color: var(--light-color);
+}
+#search .search_hide_btn{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background: none;
+    border: 1px solid var(--primary-color-light);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    color: var(--primary-color-dark);
+    font-size: 20px;
+    transition: .5s;
+}
+#search .search_hide_btn:hover{
+    background: var(--bg-color-light);
+    border: 1px solid var(--bg-color-light);
+    transform: rotate(60deg);
+}
+                      /* search section end */
+                      /* product card section start */
+                      
+#card{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: .5s;
+}
+#card.show{
+    transform: scaleX(1);
+}
+#card .card_aside{
+    background: var(--light-color);
+    padding: 30px 25px 0 30px;
+    height: 100vh;
+    overflow: scroll;
+}
+#card .heading h2{
+    padding: 40px 0 15px 0;
+    border-bottom: 1px solid var(--bg-color-light);
+    font-family: var(--primary-font);
+    font-weight: 600;
+}
+#card nav ul li{
+    padding: 15px 0;
+    border-bottom: 1px solid var(--bg-color-light);
+}
+#card .card_aside img{
+    width: 80px;
+}
+#card .card_info{
+    margin-left: 15px;
+    width: 150px;
+}
+#card .card_info a{
+    color: var(--text-color);
+    padding-bottom: 2px;
+    transition: .4s;
+}
+#card .card_info a:hover{
+    color: var(--primary-color-light);
+}
+#card .card_info p{
+    font-size: 14px;
+    color: var(--primary-color-light);
+}
+#card ul li i{
+    padding-left: 130px;
+}
+#card .card_aside span{
+    font-size: 18px;
+    font-family: var(--secondary-font);
+    display: inline-block;
+    padding: 20px 0;
+}
+#card .card_aside .btns button{
+    padding: 15px 55px;
+    color: var(--light-color);
+    background: var(--primary-color-light);
+    transition: .5s;
+    border: none;
+    margin-bottom: 100px;
+}
+#card .card_aside .btns button:hover{
+    background: var(--dark-hover-color);
+}
+#card .card_aside .card_hide_btn{
+    position: absolute;
+    font-size: 25px;
+    top: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid var(--dark-color);
+    border-radius: 50%;
+    background: none;
+    transition: .4s;
+    color: var(--dark-color);
+}
+#card .card_aside .card_hide_btn:hover{
+    background: var(--primary-color-light);
+    border: 1px solid var(--primary-color-light);
+    color: var(--light-color);
+    transform: rotate(60deg);
+}
+                      /* product card section end */
+
+                      /* pop up section start */
+                      
+#pop_up{
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+    transform: scaleX(1);
+}
+#pop_up .pop_up_info img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#pop_up.hide{
+   transform: scaleX(0);
+   transition: .5s;
+}
+#pop_up .pop_up_info{
+    width: 900px;
+    height: 500px;
+    background: var(--primary-color-light);
+}
+#pop_up .pop_up_info{
+    padding: 25px 150px;
+    color: var(--light-color);
+    position: relative;
+}
+#pop_up .pop_up_info form input{
+    width: 80%;
+    padding: 10px 20px;
+    font-family: var(--primary-font);
+    border: none;
+}
+#pop_up .pop_up_info form button{
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    background: var(--dark-hover-color);
+    color: var(--light-color);
+    z-index: 2;
+    transition: .4s;
+    font-size: 16px;
+}
+#pop_up .pop_up_info form button:hover{
+    background: var(--light-color);
+    color: var(--text-color);
+} 
+#pop_up .pop_up_info h2{
+    font-size: 45px;
+}
+#pop_up .pop_up_info p{
+    padding: 25px 0;
+}
+#pop_up .pop_up_info .checkbox p{
+    padding-left: 10px;
+}
+#pop_up .pop_up_hide_btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    border: none;
+    background: none;
+    color: var(--light-color);
+    transition: .3s;
+}
+#pop_up .pop_up_hide_btn:hover{
+    color: var(--dark-color);
+}
+                      /* pop up section end */
